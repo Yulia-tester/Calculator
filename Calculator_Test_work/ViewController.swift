@@ -100,10 +100,10 @@ class ViewController: UIViewController {
             result.text = String(resultInt)
         }
         else if sender.tag == 24 { //M- - вычесть текущий результат из значения в памяти
-            resultMinus = memoryBuffer - 
-            result.text =
+            let resultMinus = memoryBuffer - Int(result.text!)!
+            result.text = String(resultMinus)
         }
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
